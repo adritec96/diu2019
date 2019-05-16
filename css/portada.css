@@ -1,0 +1,43 @@
+
+main > #eventos{
+    display: flex;
+    flex-direction: column;
+}
+
+main > #eventos  > .evento{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: black 1px solid;
+    border-radius: 1em;
+    padding: 0.5em;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+main > #eventos  > .evento > .descripcion{
+    margin-left: 2em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main > #eventos  > .evento > img{
+    width: 15%;
+    border-radius: 1em;
+}
+
+
+
+@media(max-width: 600px) {
+    main > #eventos  > .evento{
+        flex-direction: column;
+    }
+    main > #eventos  > .evento > img{
+        width: 100%;
+    }
+}

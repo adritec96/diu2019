@@ -1,0 +1,48 @@
+main > #info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+main > #info > .fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > #info >.fila > p{
+    width: 60%;
+    font-size: 1.4em;
+}
+
+main > #info > .fila > img{
+    width: 500px;
+    
+}
+
+main > #contacto{
+    margin: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > #contacto > form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main > #contacto >form > input{
+    color: black;
+    border: 0;
+}
+
+input, textarea, button{
+    padding: 1em;
+    margin: 0.2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px  black;
+}

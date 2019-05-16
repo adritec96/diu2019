@@ -1,0 +1,146 @@
+body{
+    background-color: #F1FF87;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    background-color: #FFD930;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    padding-bottom: 1em;
+}
+
+header > img{
+    width: 200px;
+}
+
+header > #menu{
+    width: 60%;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+header  > h1{
+    font-size: 3em;
+}
+
+header > #menu > a > img{
+    width: 8%;
+    margin-right: 0.5em;
+}
+
+
+
+header > #menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+header > #menu > ul > li{
+    list-style: none; 
+    margin-left: 2em;  
+}
+
+header > #menu > ul > li > a , header > #menu > a{
+    text-decoration: none;
+    color: black;   
+    font-size: 1.5em;
+}
+
+header > #menu > ul > li > a:hover , header > #menu > a:hover{
+    color: white; 
+}
+
+
+main{
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h2{
+    font-size: 2em;
+}
+
+
+footer{
+    background-color: #FFD930;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+footer > h4{
+    margin: 1em;
+}
+
+
+
+.eventos {
+    margin-top: 2em;
+    
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventos > .evento{
+    width: 90%;
+    background-color: rgb(248, 217, 79);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    
+    /* flex */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+    justify-content: center;
+    
+}
+
+.eventos  > .evento > img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.eventos > .evento > .descripcion{
+    
+    margin: 1em;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventos  > .evento > .descripcion > h3{
+    font-size: 2em;
+}
+
+.eventos > .evento > .descripcion > button{
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    background-color:red;
+    color: black;
+    border: 0;
+    margin: 0;
+    box-shadow: 1em;
+}

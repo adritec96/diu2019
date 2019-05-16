@@ -1,0 +1,20 @@
+main > #titulo {
+    width: 100%;
+    margin: 1em;
+    padding: 1.5em;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > #titulo > h2{
+    font-size: 2em;
+}
+
+main > #titulo > img{
+    width: 10%;
+}
+
+
+

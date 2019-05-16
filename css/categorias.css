@@ -1,0 +1,37 @@
+
+main > #categorias{
+    width: 100%;
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main > #categorias > .categoria{
+    width: 20%;
+    margin: 1em;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main > #categorias > .categoria > a {
+    text-align: center;
+}
+
+main > #categorias > .categoria > a > img{
+    width: 90%;
+}
+
+@media(max-width: 600px) {
+    main > #categorias{
+        flex-direction: column;
+    }
+    main > #categorias > .categoria{
+        width: 90%;
+    }
+
+}

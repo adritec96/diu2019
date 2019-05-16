@@ -1,0 +1,69 @@
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+
+main > aside{
+    width: 25%;
+    margin-top: 2em;
+}
+
+main >  aside > form{
+    width: 100%;
+    height: 100%;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}
+
+main > aside > form > label{
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+main > aside > form > select{
+    padding: 0.25em;
+    width: 80%;
+    background-color: white;
+    border-radius: 1em;
+}
+
+
+main > aside > form > .barraBusqueda{
+    /* flex */
+    display: flex;
+    align-items: center;
+}
+
+
+main > aside > form > .barraBusqueda > input[type=text]{
+    width: 70%;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+
+
+main > aside > form > .barraBusqueda > button{
+    width: 15%;
+    background-color: transparent;
+    border: 0;
+}
+
+main  > aside >   form > .barraBusqueda >  button:hover{
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+
+main > aside > form > .barraBusqueda > button > img{
+    width: 100%;
+}
+
+
+
+
