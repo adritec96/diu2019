@@ -1,12 +1,14 @@
 body{
-    background-color: #F1FF87;
+    background-color: #F0EFE6;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 header{
-    background-color: #FFD930;
+    background-color: #FF7550;
+    background-image: linear-gradient(to bottom right, #ff9376, #e13000);
+    /*background-color: #FFAA44;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -29,12 +31,19 @@ header > #menu{
 
 }
 
-header  > h1{
-    font-size: 3em;
+header > h1{
+    font-size: 4.5em;
+    font-family: 'Marcellus', serif;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+}
+
+header > #menu > a{
+    margin:1em;
 }
 
 header > #menu > a > img{
-    width: 8%;
+    width: 30px;
     margin-right: 0.5em;
 }
 
@@ -58,6 +67,12 @@ header > #menu > ul > li > a , header > #menu > a{
     font-size: 1.5em;
 }
 
+header > #menu > ul > li > .actual > a, header > #menu > .actual > a{
+    text-decoration: none;
+    color: white;   
+    font-size: 1.5em;
+}
+
 header > #menu > ul > li > a:hover , header > #menu > a:hover{
     color: white; 
 }
@@ -70,13 +85,17 @@ main{
     align-items: center;
 }
 
-main > h2{
-    font-size: 2em;
+main h2{
+    font-family: 'Marcellus', serif;
+    font-size: 2.5em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 
 footer{
-    background-color: #FFD930;
+    background-color: #FF7550;
+    background-image: linear-gradient(to bottom right, #ff9376, #e13000);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,26 +122,30 @@ footer > h4{
 
 .eventos > .evento{
     width: 90%;
-    background-color: rgb(248, 217, 79);
+    background-color: #DFD3CF;
     border-radius: 1em;
-    margin-bottom: 1em;
-    
+    margin-bottom: 1em;   
+
     /* flex */
-    display: grid;
-    grid-template-columns: 30% 70%;
-    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    
 }
 
+
+
 .eventos  > .evento > img{
-    width: 100%;
+    margin: 1em;
+    width: 250px;
+    height: 250px;
     border-radius: 1em;
 }
 
 .eventos > .evento > .descripcion{
-    
     margin: 1em;
+    width: 65%;
     /* flex */
     display: flex;
     flex-direction: column;
@@ -132,15 +155,40 @@ footer > h4{
 
 .eventos  > .evento > .descripcion > h3{
     font-size: 2em;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.eventos  > .evento > .descripcion > h4{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.eventos  > .evento > .descripcion > p{
+    margin:0;
+    padding:0;
+    border:0;
+    text-align: justify;
 }
 
 .eventos > .evento > .descripcion > button{
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
+    margin-top: 1em;
     border-radius: 1em;
-    background-color:red;
-    color: black;
+    background-color: #EB3C2E;
+    color: white;
     border: 0;
-    margin: 0;
-    box-shadow: 1em;
+    box-shadow: 2em;
+}
+
+@media(max-width: 750px) {
+    header  > h1{
+       font-size: 3em;
+    }
+    .eventos > .evento > img{
+        width: 100%;
+    }
 }

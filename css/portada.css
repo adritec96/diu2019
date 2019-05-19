@@ -2,6 +2,7 @@
 main > #eventos{
     display: flex;
     flex-direction: column;
+
 }
 
 main > #eventos  > .evento{
@@ -9,35 +10,69 @@ main > #eventos  > .evento{
     margin-bottom: 0.5em;
     border: black 1px solid;
     border-radius: 1em;
+
+    border-width: 0.5em;
+    border-color: #FF7550;
+    border-style: inset;
     padding: 0.5em;
+
     /* flex */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
 }
 
 main > #eventos  > .evento > .descripcion{
     margin-left: 2em;
-    width: 70%;
+    width: 80%;
+    text-align: justify;
+
+    /* flex */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    
+    justify-content: space-between;
 }
 
 main > #eventos  > .evento > img{
-    width: 15%;
+    width: 250px;
+    height: 250px;
     border-radius: 1em;
 }
 
+main > #eventos > .evento > .descripcion > .boton{
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
 
+main > #eventos > .evento > .descripcion > .boton > button{
+    width: 15%;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #EB3C2E;
+    color: white;
+    box-shadow: 2em;
+}
 
-@media(max-width: 600px) {
-    main > #eventos  > .evento{
+main > #eventos  > .evento > .descripcion > h3{
+    font-size: 2em;
+    margin:0;
+}
+
+main > #eventos  > .evento > .descripcion > p{
+    margin:0;
+}
+@media(max-width: 750px) {
+    main > #eventos > .evento{
         flex-direction: column;
     }
-    main > #eventos  > .evento > img{
+    main > #eventos > .evento > .descripcion > .boton > button{
+        width: 100px;
+    }
+    main > #eventos > .evento > img{
         width: 100%;
     }
 }

@@ -1,0 +1,134 @@
+main > #titulo {
+    margin: 1em;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > #titulo > img{
+    width: 100px;
+}
+
+
+main > #evento{
+    margin: 2em;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > #evento > img{
+    width: 25%;
+}
+
+main > #evento > .descripcion{
+    width: 70%; 
+    padding-left: 2em;
+}
+
+main > #evento > .descripcion > p{
+    text-align: justify;
+}
+
+main > #evento > .opciones{
+    width: 100%;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > #evento > .opciones > .botones{
+    width: 70%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main > #evento > .opciones > .botones > button{
+    width: 250px;
+    padding: 1em;
+    margin: 0.5em; 
+    border-radius: 0.5em;
+    background-color: #3432e8;
+    color: white;
+    border: 0;
+    box-shadow: 2em;
+}
+
+main > #evento > .opciones > iframe{
+    width: 30%;
+}
+
+main > #evento > h3{
+    font-size: 2em;
+    font-family: 'Marcellus', serif;
+    padding-left:0.5em;
+}
+
+main > #evento > .comentarios{
+    width: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main > #evento > .comentarios > .comentario{
+    background-color: #DFD3CF;
+    border-radius: 1em;
+    margin: 1em;
+    padding:1em;
+}
+main > #evento > .comentarios > .comentario > .usuario{
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > #evento > .comentarios > .comentario > .usuario > img{
+    width:50px;
+    height: 50px;
+}
+
+main > #evento > .comentarios > .comentario > .usuario > h4{
+    padding-left:1em;
+}
+
+main > #evento > .comentarios > .comentario > p{
+    text-align: justify;
+}
+
+main > #evento > .comentarios > button{
+    width: 250px;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 1em;
+    background-color: #EB3C2E;
+    color: white;
+    border: 0;
+    box-shadow: 2em;
+}
+
+@media(max-width: 750px) {
+    main > #evento{
+        flex-direction: column;
+    }
+    main > #evento > img{
+        width: 100%;
+    }
+    main > #evento > .descripcion{
+        width: 100%;
+        margin:0.5em;
+    }
+    main > #evento > .opciones{
+        flex-direction: column;
+    }
+}

@@ -24,9 +24,10 @@ main > #categorias > .categoria > a {
 
 main > #categorias > .categoria > a > img{
     width: 90%;
+    border-radius: 1em;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 750px) {
     main > #categorias{
         flex-direction: column;
     }
